@@ -1,0 +1,19 @@
+class GrandParent
+{
+	String name;
+}
+public class Parent extends GrandParent{
+	String name;
+	public void show()
+	{
+		name ="yash";
+		super.name="prachi";
+	   System.out.println("grandparent name is: " +super.name +  " and parent name = "+ name);
+	}
+
+	public static void main(String[] args) {
+		 Parent obj = new Parent();
+		 obj.show();
+	}
+
+}
